@@ -10,7 +10,8 @@ app.get('/', function(req, res) {
 })
 
 app.get('/video', function(req, res) {
-  const path = 'assets/sample.mp4'
+  const path = 'N:\\Music Video\\LP - Lost On You [Official Video]-hn3wJ1_1Zsg.mp4'
+  // const path = 'assets/sample.mp4'
   const stat = fs.statSync(path)
   const fileSize = stat.size
   const range = req.headers.range
@@ -48,6 +49,6 @@ app.get('/video', function(req, res) {
   }
 })
 
-app.listen(3000, function () {
-  console.log('Listening on port 3000!')
+app.listen(3005, function () {
+  console.log('Listening on port 3005!')
 })
